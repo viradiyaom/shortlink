@@ -27,15 +27,6 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (!fullUrl) {
-/* eslint-disable-next-line */
-      alert(
-        "Please enter a valid URL. The URL must include a protocol (http:// or https://) and a domain name ending in .com, .org, or similar."
-      );
-      return;
-    }
-
     const formData = new URLSearchParams();
     formData.append("fullUrl", fullUrl);
     formData.append("urlLength", urlLength);
