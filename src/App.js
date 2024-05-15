@@ -27,10 +27,8 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    /* eslint-disable-next-line */
-     const urlPattern = /^(https?:\/\/)?([a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})(\/[^\s]*)?$/;
 
-    if (!urlPattern.test(fullUrl)) {
+    if (!fullUrl) {
 /* eslint-disable-next-line */
       alert(
         "Please enter a valid URL. The URL must include a protocol (http:// or https://) and a domain name ending in .com, .org, or similar."
