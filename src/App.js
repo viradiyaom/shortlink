@@ -28,7 +28,6 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     /* eslint-disable-next-line */
-
      const urlPattern = /^(https?:\/\/)?([a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})(\/[^\s]*)?$/;
 
     if (!urlPattern.test(fullUrl)) {
