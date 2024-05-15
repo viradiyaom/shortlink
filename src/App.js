@@ -65,7 +65,7 @@ function App() {
   };
 
   const handleRedirect = (shortUrl) => {
-    window.open(shortUrl, "_blank");
+    window.open("https://short-link-jade.vercel.app/"+shortUrl);
   };
 
   return (
